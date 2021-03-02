@@ -1,0 +1,13 @@
+% Plot negative section
+x=-10:2:0;
+f=-0.0001*((exp(abs(x)))-1);
+plot(x,f,'r');
+grid on;
+grid minor;
+% Plot positive section
+x=0:2:10;
+f=0.0001*((exp(x))-1);
+hold on;
+plot(x,f,'r');
+grid on;
+title('i-v characteristics of the circuit (2v intervals)');
