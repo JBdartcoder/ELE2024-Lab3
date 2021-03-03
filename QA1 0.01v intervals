@@ -12,4 +12,4 @@ plot(v,i1,'r');
 xlabel('Voltage (V)'); 
 ylabel('Current (A)');
 grid on;
-title('i-v characteristics with linear equivalent circuit');
+title('i-v characteristics of the circuit (0.01v intervals)');
