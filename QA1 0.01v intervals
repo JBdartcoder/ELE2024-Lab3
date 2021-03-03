@@ -1,13 +1,15 @@
 % Plot negative section
-x=-10:0.01:0;
-f=-0.0001*((exp(abs(x)))-1);
-plot(x,f,'r');
+v=-10:0.01:0;
+i1=-0.0001*((exp(abs(v)))-1);
+plot(v,i1,'r');
 grid on;
 grid minor;
 % Plot positive section
-x=0:0.01:10;
-f=0.0001*((exp(x))-1);
+v=0:0.01:10;
+i1=0.0001*((exp(v))-1);
 hold on;
-plot(x,f,'r');
+plot(v,i1,'r');
+xlabel('Voltage (V)'); 
+ylabel('Current (A)');
 grid on;
-title('i-v characteristics of the circuit (0.01v intervals)');
+title('i-v characteristics with linear equivalent circuit');
