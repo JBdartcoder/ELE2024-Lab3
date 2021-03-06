@@ -1,1 +1,22 @@
-//
+% Part 1
+v=-10:0.01:0;
+i1=-0.0001*((exp(abs(v)))-1);
+plot(v,i1,'r', 'LineWidth',1.2);
+grid on;
+grid minor;
+hold on
+i2=(-1/30)-(v/300);
+plot(v,i2,'g', 'LineWidth',1.2);
+hold on
+% Part 2
+v=0:0.01:10;
+i1=0.0001*((exp(v))-1);
+hold on
+i2=(-1/30)-(v/300);
+plot(v,i2,'g', 'LineWidth',1.2);
+hold on;
+plot(v,i1,'r', 'LineWidth',1.2);
+xlabel('Voltage (V)'); 
+ylabel('Current (A)');
+grid on;
+title('i-v characteristics with linear equivalent circuit');
